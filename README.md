@@ -1,1 +1,3 @@
-# django-blog
+# Django-blog
+
+Project of blog, using Python.Django

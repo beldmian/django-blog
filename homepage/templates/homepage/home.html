@@ -1,0 +1,15 @@
+{% extends 'homepage/main.html' %}
+
+{% block body %}
+    
+    {% for post in articles %}
+        <div class="jumbotron mb-4">
+            <h1 class="display-4">{{post.title}}</h1>
+            <p class="lead">{{ post.smalltext }}...</p>
+            <hr class="my-4">
+            <p>{{post.date}}</p>
+            <a class="btn btn-outline-primary btn-lg" href="{% url 'article-detail' post.id %}" role="button">Learn more</a>
+        </div>
+    {% endfor %}
+        
+{% endblock body %}

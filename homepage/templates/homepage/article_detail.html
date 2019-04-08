@@ -1,0 +1,8 @@
+{% extends 'homepage/main.html' %}
+
+{% block body %}
+    <h1 class="text-center">{{ article.title }}</h1>
+    <p>{{article.text}}</p>
+    <hr class="my-4">
+    <p>{{article.date}}</p>
+{% endblock body %}
